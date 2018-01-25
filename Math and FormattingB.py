@@ -116,7 +116,7 @@ print("{:>20}".format(0.578))
 
 # exponent {:e} {:.2e}
 
-# leading zero (or other placeholder) {:05}
+# leading zero (placeholder) {:05}
 
 # dollars and cents?
 # 142.3  >> $142.30

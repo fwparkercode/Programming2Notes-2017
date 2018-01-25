@@ -118,3 +118,21 @@ print("${:.2f}".format(142.3))
 # a place to collaborate with other programmers
 # a publishing tool
 # a social media site
+
+
+# Allows many people to work on same file without work being lost or edited.
+# Files can be tracked and merged together.
+# It is a "time machine" if you want to revert to a previous version of your code.
+# Files are stored in repositories
+# Acts in the cloud.
+# Reads any language
+
+# repository - where the project files are stored (repo)
+# master - repository main branch (where integration happens)
+# clone - copy of existing repo.  From github repo to local repo.
+# commit - submit file to local repo.
+# pull (update) - grab the latest code from the repo
+# push - submit code to a remote repo (from local to github)
+# head - reference to the node where the repo points (most current official update)
+
+#### Let's do branches and merges later in the semester.
