@@ -124,3 +124,29 @@ print("{:>20}".format(0.578))
 
 # Make a github account.  Use a name I will recognize.
 # I don't want an assignment coming from chidog843
+
+
+# Github is...
+# a Version Management System (VMS) which uses the git Version Control System(VCS)
+# a place to collaborate with other programmers
+# a publishing tool
+# a social media site
+# open (mostly)
+
+# Allows many people to work on same file without work being lost or edited.
+# Files can be tracked and merged together.
+# It is a "time machine" if you want to revert to a previous version of your code.
+# Files are stored in repositories
+# Acts in the cloud.
+# Reads any language
+
+# repository - where the project files are stored (repo)
+# master - repository main branch (where integration happens)
+# clone - copy of existing repo.  From github repo to local repo.
+# commit - submit file to local repo.
+# pull (update) - grab the latest code from the repo
+# push - submit code to a remote repo (from local to github)
+# head - reference to the node where the repo points (most current official update)
+
+#### Let's do branches and merges later in the semester.
+

@@ -112,3 +112,9 @@ print("${:.2f}".format(142.3))
 
 # Make a github account.  Use a name I will recognize.
 # I don't want an assignment coming from chidog843
+
+# Github is...
+# a Version Control System (VCS)
+# a place to collaborate with other programmers
+# a publishing tool
+# a social media site
