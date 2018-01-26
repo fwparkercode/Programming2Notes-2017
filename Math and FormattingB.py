@@ -111,16 +111,17 @@ print("{:<30}".format(pi))
 print("{:^30}".format(pi))
 
 # percent {:%} {:.2%}
-print("{:>20}".format(0.578))
-
+print("{:>20.2%}".format(0.578))
 
 # exponent {:e} {:.2e}
+print("{:.2e}".format(8738723487234))
 
 # leading zero (placeholder) {:05}
+print("{:05}".format(23))
 
 # dollars and cents?
 # 142.3  >> $142.30
-
+print("${0:.2f}".format(142.3))
 
 # Make a github account.  Use a name I will recognize.
 # I don't want an assignment coming from chidog843
