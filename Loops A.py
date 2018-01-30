@@ -78,3 +78,19 @@ b = 4
 print(a, b)
 a, b = b, a
 print(a, b)
+
+
+
+for a in range(1, 10):
+    for b in range(10):
+        for c in range(10):
+            for d in range(1, 10):
+                print(str(a) + str(b) + str(c) + str(d))
+
+
+
+
+
+
+
+

@@ -55,3 +55,15 @@ for i in range(10):
         break
 else:
     print("Did not roll a zero")
+
+print(37.58 % .25)
+
+
+word = "dog"
+
+for letter in word:
+    print(bin(ord(letter)))
+
+print(0b1001 + 0b0010)
+
+print("{} dollars {} quarters".format(1, 2))
