@@ -6,14 +6,14 @@ from my_imports import my_import
 square = 1
 
 # Functions
-def my_function(name):
+def my_function(name = "Mr. Lee"):
     '''
     Says hello
     :param name: 
     :return: 
     '''
     x = 2
-    print("Square =", square)
+    #print("Square =", square)
     print("Hello", name)
 
 #my_function("Mr. Lee") # this will always run on execution or import
@@ -48,7 +48,12 @@ if __name__ == "__main__":
     # python (__main__), global (far left), local (inside functions)
     # you can see a global variable anywhere, but cannot change it locally.
     # you can ONLY see a local variable locally.  Local variables do not exist outside namespace
+    my_function(name = "Aaron")
+    my_function()
 
+    print("Hello", "World", end = " ", sep = "")
+    print("World")
+    print(max(3, 2, 6,))
 
 
 
