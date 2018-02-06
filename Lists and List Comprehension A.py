@@ -52,45 +52,31 @@ print(my_list)
 
 print(my_list.index("Cam"))
 
-#name = input("Enter your username: ")
-#print(name)
 
-import time, sys
-force = list if sys.version_info[0] == 3 else (lambda X: X)
-
-class timer:
-    def __init__(self, func):
-        self.func = func
-        self.alltime = 0
-    def __call__(self, *args, **kargs):
-        start = time.clock()
-        result = self.func(*args, **kargs)
-        elapsed = time.clock() - start
-        self.alltime += elapsed
-        print("{}:\telapsed: {}\ttime:{}".format(self.func.__name__, elapsed, self.alltime))
-        return result
-
-@timer
-def listcomp(N):
-    return [x * 2 for x in range(N)]
-
-@timer
-def mapcall(N):
-    return force(map((lambda x: x * 2), rannge(N)))
-
-result = listcomp(3)
-listcomp(10000)
-
-print(result)
+# ITERATING A LIST
+#  make a list from 0 to 9
+#  print each item in the list using for each
+#  add 10 to each item in the list using iteration
 
 
-def hello(name):
-    return "Hello {}.".format(name)
-
-hello_list = map(hello, my_list)
-for hello in hello_list:
-    print(hello)
+# make a 2d list that is 10 x 10   [[0, 0], [0, 1], [0, 2] ... [9, 9]]
+# print every pair
+# add 10 to each item using iteration
 
 
-hello_list = [x + "!" for x in my_list]
-print(hello_list)
+# make a list of numbers from 0 to 99 and print it
+
+# Square every item in the previous list
+
+# Show only odd numbers
+
+# Show only numbers from 100 to 1000
+
+# Do all four at once
+
+# list comprehension
+# [returned_item  for  iterator  in range_or_list  filter]
+
+
+
+
