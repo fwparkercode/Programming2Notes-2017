@@ -21,7 +21,10 @@ def listcomp(N):
 def mapcall(N):
     return force(map((lambda x: x * 2), rannge(N)))
 
-result = listcomp(3)
-listcomp(10000)
 
-print(result)
+
+if __name__ == "__main__":
+
+    result = listcomp(3)
+    listcomp(10000)
+    print(result)
