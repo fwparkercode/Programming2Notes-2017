@@ -7,3 +7,6 @@ for a in range(1, 10):
                 #print(num, num_reverse)
                 if int(num) == 4 * int(num_reverse):
                     print(num, num_reverse)
+
+
+print("{:.2f}".format(3.487457854))
