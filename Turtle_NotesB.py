@@ -88,9 +88,8 @@ def recursive_ncaa(x, y, size, depth):
         my_turtle.goto(x + size, y)
         my_turtle.goto(x + size, y + size / 2)
         my_turtle.goto(x + size, y - size / 2)
-        size = random.random() * size
-        recursive_ncaa(x + size, y + size, size, depth - 1)
-        recursive_ncaa(x + size, y - size, size, depth - 1)
+        recursive_ncaa(x + size, y + size / 2, size / 2, depth - 1)
+        recursive_ncaa(x + size, y - size / 2, size / 2, depth - 1)
 
 
 recursive_ncaa(-300, 0, 250, 7)
