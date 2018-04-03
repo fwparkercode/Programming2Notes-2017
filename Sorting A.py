@@ -46,3 +46,36 @@ for key_pos in range(1, len(rando2)):
     rando2[scan_pos + 1] = key_value
 
 print(rando2)
+
+
+# real sorting using sort, sorted, and lambda
+my_list1 = [3, 5, 1, 8, 5, 3]
+my_list2 = [[8, 2], [5, 1], [6, 3]]
+
+my_list1.sort()  # sorts in place
+my_list1 = sorted(my_list1)  # equivalent function that RETURNS
+
+print(my_list1)
+
+my_list2.sort()
+print(my_list2)
+
+# lambda function - anonymous single line function
+# lambda parameters: what to return
+
+double = lambda x: 2 * x
+print(double(10))
+
+products = lambda x, y: x * y
+print(products(9, 8))
+
+my_list2.sort(key=lambda x: x[1])
+print(my_list2)
+
+my_list3 = ["Bev", "Cam", "Abe", "ava"]
+my_list3.sort(key=lambda x: x.upper())
+print(my_list3)
+
+
+
+
