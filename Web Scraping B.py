@@ -46,5 +46,38 @@ for i in range(len(quotes)):
 
 
 
+# Regal Webster Scrape
+url = "https://www.regmovies.com/theaters/regal-webster-place-11/C00129681357"
+
+page = requests.get(url)
+
+#print(page.text)
+
+soup = BeautifulSoup(page.text, "html.parser")
+print(soup.prettify())
+
+titles = soup.findAll("h3", class_="title")
+
+titles = [x.text.strip() for x in titles]
+print(titles)
+
+movie_times = soup.findAll("ul", class_="format-showtimes")
+print(movie_times[0])
+
+show_times = []
+for times in movie_times:
+    show_time = times.findAll("li", class_="showtime-entry")
+    show_times.append(show_time)
+
+print(show_times)
+
+for i in range(11):
+    print("\n")
+    print(titles[i])
+    for time in show_times[i]:
+        print(time.text.strip())
+
+
+
 
 
