@@ -26,9 +26,24 @@ class Window(QWidget):
         slider.setValue(50)
         grid.addWidget(slider, 3, 1, 1, 2)
 
-        combobox = QComboBox(self)
+        combobox = QComboBox(self)  # strings
         grid.addWidget(combobox, 4, 1, 1, 1)
         combobox.addItems(["Beck", "Nathan", "Olivia"])
+
+        checkbox = QCheckBox("Choose me!", self) # boolean
+        grid.addWidget(checkbox, 4, 2, 1, 1)
+
+        textline = QLineEdit(self) # getting a string
+        grid.addWidget(textline, 5, 1, 1, 1)
+
+        multiline = QTextEdit(self)
+        grid.addWidget(multiline, 5, 2, 1, 1)
+
+        calendar = QCalendarWidget(self)
+        grid.addWidget(calendar, 6, 1, 1, 1)
+
+
+
 
 
         # Set signals and slots
