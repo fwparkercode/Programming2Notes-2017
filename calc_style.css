@@ -1,0 +1,12 @@
+QPushButton{
+    font-family: "Helvetica";
+    background-color: "orange";
+    height: 100;
+    border-width: 0;
+    color: white;
+    font-size: 100px;
+}
+
+QPushButton#equal{
+    background-color: "blue";
+}

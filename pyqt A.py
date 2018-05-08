@@ -9,7 +9,7 @@ class Window(QWidget):
         # Create our Layout
         grid = QGridLayout()
         self.setLayout(grid)
-        self.setGeometry(100, 10, 300, 500) # topleftx, toplefty, width, height
+        self.setGeometry(100, 10, 300, 700) # topleftx, toplefty, width, height
 
         # Create our widgets
 
@@ -31,21 +31,43 @@ class Window(QWidget):
         grid.addWidget(label_btn1, 3, 2, 1, 1)
 
         lcd = QLCDNumber(self)
+        lcd.display(50)
         grid.addWidget(lcd, 4, 1, 1, 2)
 
         sld = QSlider(Qt.Horizontal, self)
+        sld.setValue(50)
         grid.addWidget(sld, 5, 1, 1, 2)
 
+        self.combobox = QComboBox(self)
+        grid.addWidget(self.combobox, 6, 1, 1, 1)
+        self.combobox.addItem("Mr. Lee")
+        self.combobox.addItems(["Zoe", "Grace", "Matthew"])
 
+        checkbox = QCheckBox("Check me!", self)
+        grid.addWidget(checkbox, 6, 2, 1, 1)
 
+        lineedit = QLineEdit(self)
+        grid.addWidget(lineedit, 7, 1, 1, 1)  # single line
+
+        textedit = QTextEdit(self)
+        grid.addWidget(textedit, 7, 2, 1, 1)  # multiline
+
+        calendar = QCalendarWidget(self)
+        grid.addWidget(calendar, 8, 1, 1, 2)
 
         # Slots and Signals
         # Signals are sent when an event occurs.
         # Slot is a place for the signal to go
+        btn1.clicked.connect(lambda: label_btn1.setText("pushed"))
+        sld.valueChanged.connect(lcd.display)  # true signal to slot
+        self.combobox.currentTextChanged.connect(self.combo_print)
 
 
         # draw our gui
         self.show()
+
+    def combo_print(self):
+        print("My favorite is", self.combobox.currentText())
 
 
 if __name__ == "__main__":

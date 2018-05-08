@@ -15,28 +15,9 @@ class Window(QWidget):
         self.setGeometry(10, 10, 400, 200)  # topleftx, toplefty, width, height
         self.title_font = QFont("Times", 30, QFont.Bold)
 
-
-        # Create our widgets
-        self.title = QLabel("Magic 8 Ball")
-        self.grid.addWidget(self.title, 1, 1, 1, 2)
-        self.title.setAlignment(Qt.AlignCenter)
-        self.title.setFont(self.title_font)
-
-        self.ask_button = QPushButton("Ask me")
-        self.grid.addWidget(self.ask_button, 2, 1, 1, 1)
-
-        self.answer = QLabel("Answer")
-        self.grid.addWidget(self.answer, 2,2,1,1)
-
-        # signals and slots
-        self.ask_button.clicked.connect(self.ask_me)
-
-        self.show()
-    def ask_me(self):
-        self.answer.setText(self.message_list[random.randrange(len(self.message_list))])
-
-
-
+        self.title =
+        self.ask_button = QPushButton("Ask me!")
+        self.grid.addWidget(self.ask_button, 2, )
 
 
 if __name__ == "__main__":

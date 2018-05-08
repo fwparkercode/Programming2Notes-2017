@@ -42,16 +42,14 @@ class Window(QWidget):
         calendar = QCalendarWidget(self)
         grid.addWidget(calendar, 6, 1, 1, 1)
 
-
-
-
-
         # Set signals and slots
-        button1.clicked.connect(lambda: label1.setText("Clicked!"))
-        slider.valueChanged.connect(lcd.display)
+
+
 
         # draw the app
         self.show()
+    def box_checked(self):
+        print("Box checked")
 
 
 if __name__ == '__main__':

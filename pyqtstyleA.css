@@ -1,0 +1,19 @@
+QWidget {
+    background-color: rgb(200, 200, 255);
+}
+
+QPushButton {
+    background-color: white;
+    color: red;
+    /*border-radius: 8;*/
+}
+
+QSpinBox {
+    background-color: white;
+}
+
+QLabel#title {
+    color: blue;
+    font-family: "Helvetica Light";
+    font-size: 15px;
+}
